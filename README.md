@@ -1,7 +1,7 @@
 # antd-daterange
 Date range picker based on ant-design.
 
-[Demo](https://codepen.io/hdwong/pen/xxWwxyj)
+[Demo](https://stackblitz.com/edit/react-rr7uuq)
 
 ## Install
 Yarn
