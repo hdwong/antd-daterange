@@ -1,11 +1,12 @@
-import { DatePicker } from 'antd';
+import { useContext, useMemo } from 'react';
+import { DatePicker, ConfigProvider } from 'antd';
 import moment from 'moment';
 import './style.css';
+import zhCN from './locale/zh_CN';
 
-/* 默认 DatePicker */
+/* 范围 */
 const today = moment().endOf('day');
 const yesterday = moment().subtract(1, 'day').endOf('day');
-
 const defaultRanges = {
   'Today': [ today, today ],
   'Yesterday': [ yesterday, yesterday ],
@@ -21,6 +22,22 @@ const defaultRanges = {
 
 const AntdDateRange = props => {
   const { props: componentProps, className, style, value, onChange } = props;
+  const context = useContext(ConfigProvider.ConfigContext);
+
+  const ranges = useMemo(() => {
+    if (context.locale && context.locale.locale === 'zh-cn') {
+      // 中文
+      const result = {};
+      for (let label in defaultRanges) {
+        const key = zhCN[label] || label;
+        result[key] = defaultRanges[label];
+      }
+      return result;
+    } else {
+      // 英语
+      return defaultRanges;
+    }
+  }, [ context.locale ]);
 
   return (
     <DatePicker.RangePicker
@@ -31,7 +48,7 @@ const AntdDateRange = props => {
         onChange={onChange}
         dropdownClassName="antd-daterange"
         disabledDate={current => current && current > today}
-        ranges={defaultRanges} />
+        ranges={ranges} />
   );
 };
 

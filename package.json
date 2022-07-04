@@ -1,6 +1,6 @@
 {
   "name": "antd-daterange",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Date range picker based on ant-design",
   "main": "src/index.jsx",
   "scripts": {

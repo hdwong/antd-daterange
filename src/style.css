@@ -15,25 +15,31 @@
 }
 .antd-daterange .ant-picker-ranges {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 110px;
-  overflow: hidden;
-  line-height: 24px;
-  list-style: none;
-  padding: 8px;
+  padding: 10px;
 }
 .antd-daterange .ant-picker-ranges .ant-picker-preset {
   display: block;
   white-space: nowrap;
   margin-bottom: 1px;
-  padding: 0 8px;
-  cursor: pointer;
 }
 .antd-daterange .ant-picker-ranges .ant-picker-preset > span {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0 8px;
   background-color: transparent;
   border: none;
 }
 .antd-daterange .ant-picker-ranges .ant-picker-preset:hover {
   background-color: #e6f7ff;
+}
+.antd-daterange .ant-picker-decade-panel .ant-picker-content,
+.antd-daterange .ant-picker-year-panel .ant-picker-content,
+.antd-daterange .ant-picker-quarter-panel .ant-picker-content,
+.antd-daterange .ant-picker-month-panel .ant-picker-content {
+  height: 228px;
 }
