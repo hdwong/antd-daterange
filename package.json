@@ -1,0 +1,30 @@
+{
+  "name": "antd-daterange",
+  "version": "1.0.0",
+  "description": "Date range picker based on ant-design",
+  "main": "src/index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdwong/antd-daterange.git"
+  },
+  "keywords": [
+    "react",
+    "ant-design",
+    "antd",
+    "datepicker",
+    "rangepicker",
+    "daterange"
+  ],
+  "author": "Bun Wong <hdwong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hdwong/antd-daterange/issues"
+  },
+  "homepage": "https://github.com/hdwong/antd-daterange#readme",
+  "devDependencies": {
+    "react": "^17.0.2"
+  }
+}

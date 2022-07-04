@@ -1,0 +1,39 @@
+.antd-daterange .ant-picker-panel-container {
+  position: relative;
+  padding-left: 110px;
+}
+.antd-daterange .ant-picker-panels {
+  border-left: 1px solid #f0f0f0;
+}
+.antd-daterange .ant-picker-panels .ant-picker-panel {
+  border-bottom: 0;
+}
+.antd-daterange .ant-picker-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.antd-daterange .ant-picker-ranges {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110px;
+  overflow: hidden;
+  line-height: 24px;
+  list-style: none;
+  padding: 8px;
+}
+.antd-daterange .ant-picker-ranges .ant-picker-preset {
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 1px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.antd-daterange .ant-picker-ranges .ant-picker-preset > span {
+  background-color: transparent;
+  border: none;
+}
+.antd-daterange .ant-picker-ranges .ant-picker-preset:hover {
+  background-color: #e6f7ff;
+}
